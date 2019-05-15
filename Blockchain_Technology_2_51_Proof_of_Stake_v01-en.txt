@@ -1,0 +1,79 @@
+Up until now, the main consensus algorithm we’ve focused on is Proof-of-Work.
+Proof-of-Work, although the system behind the most popular cryptocurrency, Bitcoin,
+still has many drawbacks.
+For example, we have already mentioned the massive amount of energy consumption required
+for Proof-of-Work, the potential for 51% attacks, as well as the shift from decentralized individual
+miners, to more centralized mining pools.
+To solve some of these issues, Proof-of-Stake was introduced.
+As mentioned earlier, Proof-of-Stake is a consensus mechanism where voting power is
+directly proportional to economic stake locked up in the network, instead of computational
+power and resources.
+Each participant stakes a certain amount of native currency, and each node is given a
+probability of being chosen as the next validator, weighted by how much was at stake.
+Once a validator is chosen, they can propose a valid block and receive a reward.
+With this scheme, how much power a participant has in the network is limited by the amount
+they are willing to stake.
+Rather than relying on rewards for security, Proof-of-Stake relies on penalties.
+If a participant places stake on a dishonest block, they are penalized and lose however
+much they put at stake.
+In this, acting maliciously is penalized much more heavily than the gain from acting honestly.
+This is one example of defender’s advantage.
+Nodes are now more disincentivized to act maliciously due to the explicit consequences
+of doing so.
+This security comes from locking up capital for long periods of time.
+Proof-of-Work, on the other hand, has no such defender’s advantage: the cost of attacking
+and the cost of defending are 1:1, meaning the amount of resources I spend on acting
+honestly versus acting dishonestly are equal.
+There is no explicit disincentive against acting maliciously in Proof-of-Work: it just
+simply allows it.
+Another advantage Proof-of-Stake has over Proof-of-Work is the drawback in attempting
+a 51% attack.
+In Proof-of-Work, a dishonest actor needs 51% of the network’s hash power, and if
+achieved, can censor transactions, rewrite transaction history, and perform double spend
+attacks.
+Nodes are not explicitly discouraged from attempting a 51% attack, and, if unsuccessful,
+only lose the resources used to attempt the attack.
+This cannot be said for Proof-of-Stake, which requires 51% of the network’s coins.
+This is incredibly expensive, and then the attacker must stake all of their wealth in
+order to attempt executing the attack.
+Also, since this miner owns 51% of the cryptocurrency, it is not in their best interest to attack
+a network that they hold a majority share in if the value of the currency were to drop
+due to the attack.
+As seen, there are major drawbacks in attempting this, another example of Proof-of-Stake’s
+disincentive focused system.
+Although Proof-of-Stake fixes many issues with Proof-of-Work, it is not without its
+own drawbacks.
+For example, there is the problem of the “rich get richer.”
+Those with more wealth can stake more and increase their chances of creating the next
+block, and therefore receiving the reward, and increasing their wealth further.
+One implementation of Proof-of-Stake is Ethereum’s Casper Protocol, which takes this to another
+step, which enforces a minimum stake value required to validate blocks.
+Some argue that this takes the issue to an extreme and makes the system even much more
+centralized.
+However, only time will tell.
+Another issue of Proof-of-Stake stems from the fact that amount of voting power is tied
+directly to how much stake one has.
+In Proof-of-Work, anyone can buy ASICs and begin participating in the network, but in
+Proof-of-Stake, all the voting power is internal to the system so one can only obtain stake
+if a current stakeholder sells theirs.
+This means that if a single actor is able to obtain 51% of the cryptocurrency, there
+is no way for this power to be taken back by the rest of the network.
+In Proof-of-Work, dislodging 51% power would only require more computation through more
+honest mining, reducing the relative power of the malicious actor.
+However, in Proof-of-Stake, the only way to reduce this power is to decrease relative
+amount of cryptocurrency the dishonest validator has.
+However, there is no way to do this without the 51% stakeholder willingly selling their
+stake.
+Proof-of-Stake also introduces the liquidity problem.
+Since validators must lock up their funds in order to have a stake in the network, the
+actual amount of funds available for transactions is much lower.
+This reduces the liquidity of the cryptocurrency itself, decreases the amount of available
+funds, and increases price and demand.
+But because of this, validators are more incentivized to hold onto their funds and sell it when
+the prices increase, rather than participate in the network.
+One more issue is the fact that someone can rewrite the history of blockchain if someone
+with a huge share of stake sells their private keys.
+By obtaining such a large stake in the network, they change previous transactions on a different
+chain.
+Outside of these drawbacks of Proof-of-Stake that were mentioned, there are also specific
+attacks that can be conducted in a Proof-of-Stake system that will be covered in the next section.
