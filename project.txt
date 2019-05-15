@@ -1,0 +1,19 @@
+Business Problem 
+
+In this project we will try to find an optimal location for opening an Indian restaurant in Tokyo, Japan.
+
+Since there are lots of restaurants in Tokyo, we need to detect locations that are not too many restaurants. We would also like to find a restaurant with no Indian restaurant nearby. And we would also like to locate an area with a big enough population to support the business. 
+
+We will use data science to generate a list of most promising neighbourhoods based on the above three criteria. We will clearly show the advantages of each area so that the stakeholders can chose the best final location.
+
+Data 
+
+Based on definition of our problem, factors that will influence our decision are:
+	•	number of existing restaurants in the neighbourhood 
+	•	number of and distance to Indian restaurants in the neighbourhood, if any
+	•	population of the neighbourhood
+
+Following data sources will be needed to extract/generate the required information:
+	•	centers of candidate areas will be generated algorithmically and approximate addresses of centers of those areas will be obtained using Google Maps API reverse geocoding
+	•	number of restaurants and their type and location in every neighbourhood will be obtained using Foursquare API
+	•	the population of each neighbourhood will be obtained using the data from the Tokyo government (available on http://www.toukei.metro.tokyo.jp/tnenkan/2017/tn17q3i002.htm)
